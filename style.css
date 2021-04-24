@@ -34,7 +34,6 @@ nav h6 { color: #015450; }
     color: #015450;
     font-size: 0.5em;
 }
-
 .nav-link.active { color: #0d6e69; }
 
 .nav a:hover { color: #10a19a; }
@@ -44,34 +43,29 @@ nav h6 { color: #015450; }
 .parallax {
     background-image: url('./assets/logo_header.jpg');
     height: 100%;
+    z-index: -500;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
+    position: relative;
+    bottom: 20px;
+    margin-bottom: -400px;
 }
 
 .sections {
     color: #ededed;
-    position: relative;
-    bottom: 332px;
     padding-top: 50px;
     padding-bottom: 50px;
     padding-right: 20px;
     padding-left: 20px;
 }
+.sections h4 { font-size: 2.25em; }
+.sections h6 { font-size: 1.6em; }
 
-.sections h4 { font-size: 2em; }
-.sections h6 { font-size: 1.3em; }
-
-.section-1 {
-    background-color: rgba(13, 110, 105, 0.4);
-    color: #ededed;
-    position: relative;
-    bottom: 330px;
-}
-
-.section-1 h1 { font-size: 4em; }
-.section-1 h4 { font-size: 2.5em; }
+.section-1 { background-color: #015450; }
+.section-1 h1 { font-size: 3em; }
+.section-1 h3 { font-size: 1.8em; }
 
 .section-2 { background-color: #10a19a; }
 
@@ -80,44 +74,41 @@ nav h6 { color: #015450; }
 .section-3 a { color: #ededed; }
 
 .section-4 {
-    color: #0d6e69;
+    color: #015450;
     background-color: #fbfbfb;
-    position: relative;
-    bottom: 332px;
     padding-top: 20px;
 }
-
-.section-4 .left { text-align: center; }
 .section-4 h1 { font-size: 2.5em; }
-.section-4 h6 { font-size: 1.2em; }
-
-.section-4 .right {
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 20px;
-}
-
+.section-4 h5 { font-size: 1.3em; }
 .section-4 .input { font-size: 1em; }
 .section-4 button { width: 100%; }
+.section-4 .left { text-align: center; }
+.section-4 .right {
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+.section-4 .right button {
+    background-color: #015450;
+    color: #ededed;
+}
 
 /* Footer */
 .footer {
     color: #0d6e69;
     background-color: #fbfbfb;
-    position: relative;
-    bottom: 332px;
 }
 
 .footer h5 { font-size: 1.5em; }
 .footer p { font-size: 1em; }
 
-.footer .copyright { background-color: #e7e6e6; }
+.footer .copyright {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #e7e6e6;
+}
 
-
-
-/*
-Scaling
-*/
 
 @media (min-width: 576px) {
     nav h3 { font-size: 1.8em; }
@@ -126,12 +117,11 @@ Scaling
     .vp-xs, .vp-md, .vp-lg, .vp-xl { display: none; }
     .vp-sm { display: inherit; }
 
-    .section-1 h1 { font-size: 4.5em; }
-    .section-1 h4 { font-size: 3.3em; }
+    .section-1 h1 { font-size: 3.8em; }
+    .section-1 h3 { font-size: 2.8em; }
 
-    .sections h4 { font-size: 3.5em; }
-    .sections h6 { font-size: 2.75em; }
-
+    .sections h4 { font-size: 3em; }
+    .sections h6 { font-size: 2.1em; }
     .sections {
         padding-top: 60px;
         padding-bottom: 40px;
@@ -152,12 +142,11 @@ Scaling
     .vp-xs, .vp-sm, .vp-lg, .vp-xl { display: none; }
     .vp-md { display: inherit; }
 
-    .section-1 h1 { font-size: 5em; }
-    .section-1 h4 { font-size: 4em; }
+    .section-1 h1 { font-size: 4.25em; }
+    .section-1 h3 { font-size: 3.3em; }
 
-    .sections h4 { font-size: 3.5em; }
+    .sections h4 { font-size: 3.25em; }
     .sections h6 { font-size: 2.25em; }
-
     .sections {
         padding-top: 75px;
         padding-bottom: 60px;
@@ -166,6 +155,10 @@ Scaling
     }
 
     .section-3 .bottom-text { padding-top: 40px; }
+
+    .section-4 h1 { font-size: 3.5em; }
+    .section-4 h5 { font-size: 2.25em; }
+    .section-4 .left { padding-bottom: 50px; }
 }
 
 @media (min-width: 992px) {
@@ -183,14 +176,16 @@ Scaling
         background-repeat: no-repeat;
         background-size: cover;
         image-rendering: pixelated;
+        bottom: unset;
+        margin-bottom: -350px;
     }
 
-    .section-1 h1 { font-size: 6em; }
-    .section-1 h4 { font-size: 4em; }
+    .section-1 { background-color: rgba(13, 110, 105, 0.4); }
+    .section-1 h1 { font-size: 4.25em; }
+    .section-1 h3 { font-size: 3em; }
 
-    .sections h4 { font-size: 3.75em; }
-    .sections h6 { font-size: 2.5em; }
-
+    .sections h4 { font-size: 3.25em; }
+    .sections h6 { font-size: 2em; }
     .sections {
         padding-top: 80px;
         padding-bottom: 80px;
@@ -200,26 +195,12 @@ Scaling
 
     .section-3 .bottom-text { padding-top: 60px; }
 
-    .section-4 { padding-top: 50px; }
-
-    .section-4 .left {
-        text-align: left;
-        padding-left: 50px;
-    }
-
-    .section-4 h1 { font-size: 4em; }
-    .section-4 h6 { font-size: 2.5em; }
-
-    .section-4 .right {
-        position: inherit;
-        margin-right: 40%;
-        bottom: 270px;
-        left: 40%;
-        margin-bottom: -150px;
-    }
-
+    .section-4 .right { padding-top: 0px; }
+    .section-4 h1 { font-size: 3em; }
+    .section-4 h5 { font-size: 1.75em; }
     .section-4 .input { font-size: 1em; }
     .section-4 button { width: 100%; }
+    .section-4 .left { text-align: left; }
 
 }
 
@@ -230,12 +211,11 @@ Scaling
     .vp-xs, .vp-sm, .vp-md, .vp-lg { display: none; }
     .vp-xl { display: inherit; }
 
-    .section-1 h1 { font-size: 8em; }
-    .section-1 h4 { font-size: 6em; }
+    .section-1 h1 { font-size: 5em; }
+    .section-1 h3 { font-size: 4.5em; }
 
-    .sections h4 { font-size: 5em; }
-    .sections h6 { font-size: 3.25em; }
-
+    .sections h4 { font-size: 3.8em; }
+    .sections h6 { font-size: 2.6em; }
     .sections {
         padding-top: 100px;
         padding-bottom: 100px;
@@ -245,13 +225,8 @@ Scaling
 
     .section-3 .bottom-text { padding-top: 80px; }
 
-    .section-4 .right {
-        padding-top: 50px;
-        bottom: 370px;
-    }
-
-    .section-4 h1 { font-size: 5em; }
-    .section-4 h6 { font-size: 3em; }
+    .section-4 h1 { font-size: 3.5em; }
+    .section-4 h5 { font-size: 2em; }
     .section-4 .input { font-size: 2em; }
 
     .footer h5 { font-size: 2.25em; }
