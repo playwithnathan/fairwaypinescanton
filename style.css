@@ -11,8 +11,6 @@ body, html {
 .vp-xs { display: inherit; }
 .vp-sm, .vp-md, .vp-lg, .vp-xl { display: none; }
 
-
-
 /* Nav */
 nav {
     color: #015450;
@@ -32,7 +30,7 @@ nav h6 { color: #015450; }
 
 .nav-link {
     color: #015450;
-    font-size: 0.5em;
+    font-size: 1.2em;
 }
 .nav-link.active { color: #0d6e69; }
 
@@ -62,34 +60,33 @@ nav h6 { color: #015450; }
 }
 .sections h4 { font-size: 2.25em; }
 .sections h6 { font-size: 1.6em; }
+.sections a {
+    color: #ededed;
+    text-decoration: underline;
+}
 
-.section-1 { background-color: #015450; }
-.section-1 h1 { font-size: 3em; }
-.section-1 h3 { font-size: 1.8em; }
+.overlay { background-color: #015450; }
+.overlay h1 { font-size: 3em; }
+.overlay h3 { font-size: 1.8em; }
 
-.section-2 { background-color: #10a19a; }
+.bottom-text { padding-top: 20px; }
 
-.section-3 { background-color: #015450; }
-.section-3 .bottom-text { padding-top: 20px; }
-.section-3 a { color: #ededed; }
-
-.section-4 {
+.contact-us {
     color: #015450;
     background-color: #fbfbfb;
     padding-top: 20px;
 }
-.section-4 h1 { font-size: 2.5em; }
-.section-4 h5 { font-size: 1.3em; }
-.section-4 .input { font-size: 1em; }
-.section-4 button { width: 100%; }
-.section-4 .left { text-align: center; }
-.section-4 .right {
+.contact-us h1 { font-size: 2.5em; }
+.contact-us h5 { font-size: 1.3em; }
+.contact-us .input { font-size: 1em; }
+.contact-us button { width: 100%; }
+.contact-us .left { text-align: center; }
+.contact-us .right {
     padding-top: 50px;
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 20px;
 }
-.section-4 .right button {
+.contact-us .right button {
     background-color: #015450;
     color: #ededed;
 }
@@ -98,6 +95,7 @@ nav h6 { color: #015450; }
 .footer {
     color: #0d6e69;
     background-color: #fbfbfb;
+    padding-top: 50px;
 }
 
 .footer h5 { font-size: 1.5em; }
@@ -110,15 +108,41 @@ nav h6 { color: #015450; }
 }
 
 
+/* Home Page */
+.home-page .section-1 { background-color: #10a19a; }
+.home-page .section-2 { background-color: #015450; }
+
+/* Welcome Page */
+.welcome-page .section-1 {
+    background-color: #10a19a;
+}
+.welcome-page .section-2 {
+    color: #015450;
+    background-color: #fbfbfb;
+}
+.welcome-page .section-3 { background-color: #015450; }
+
+/* Community Page */
+.community-page .section-1 {
+    background-color: #10a19a;
+}
+.community-page .section-2 {
+    color: #015450;
+    background-color: #fbfbfb;
+}
+.community-page .section-2 a { color: #015450; }
+.community-page .section-3 { background-color: #015450; }
+
+
 @media (min-width: 576px) {
     nav h3 { font-size: 1.8em; }
-    .nav-link { font-size: 0.8em; }
+    .nav-link { font-size: 1.5em; }
 
     .vp-xs, .vp-md, .vp-lg, .vp-xl { display: none; }
     .vp-sm { display: inherit; }
 
-    .section-1 h1 { font-size: 3.8em; }
-    .section-1 h3 { font-size: 2.8em; }
+    .overlay h1 { font-size: 3.8em; }
+    .overlay h3 { font-size: 2.8em; }
 
     .sections h4 { font-size: 3em; }
     .sections h6 { font-size: 2.1em; }
@@ -129,7 +153,7 @@ nav h6 { color: #015450; }
         padding-left: 60px;
     }
 
-    .section-3 .bottom-text { padding-top: 20px; }
+    .bottom-text { padding-top: 20px; }
 
     .footer h5 { font-size: 2em; }
     .footer p { font-size: 1.5em; }
@@ -137,13 +161,13 @@ nav h6 { color: #015450; }
 
 @media (min-width: 768px) {
     nav h3 { font-size: 2.3em; }
-    .nav-link { font-size: 1.3em; }
+    .nav-link { font-size: 1.75em; }
 
     .vp-xs, .vp-sm, .vp-lg, .vp-xl { display: none; }
     .vp-md { display: inherit; }
 
-    .section-1 h1 { font-size: 4.25em; }
-    .section-1 h3 { font-size: 3.3em; }
+    .overlay h1 { font-size: 4.25em; }
+    .overlay h3 { font-size: 3.3em; }
 
     .sections h4 { font-size: 3.25em; }
     .sections h6 { font-size: 2.25em; }
@@ -154,11 +178,11 @@ nav h6 { color: #015450; }
         padding-left: 75px;
     }
 
-    .section-3 .bottom-text { padding-top: 40px; }
+    .bottom-text { padding-top: 40px; }
 
-    .section-4 h1 { font-size: 3.5em; }
-    .section-4 h5 { font-size: 2.25em; }
-    .section-4 .left { padding-bottom: 50px; }
+    .contact-us h1 { font-size: 3.5em; }
+    .contact-us h5 { font-size: 2.25em; }
+    .contact-us .left { padding-bottom: 50px; }
 }
 
 @media (min-width: 992px) {
@@ -180,9 +204,9 @@ nav h6 { color: #015450; }
         margin-bottom: -350px;
     }
 
-    .section-1 { background-color: rgba(13, 110, 105, 0.4); }
-    .section-1 h1 { font-size: 4.25em; }
-    .section-1 h3 { font-size: 3em; }
+    .overlay { background-color: rgba(13, 110, 105, 0.4); }
+    .overlay h1 { font-size: 4.25em; }
+    .overlay h3 { font-size: 3em; }
 
     .sections h4 { font-size: 3.25em; }
     .sections h6 { font-size: 2em; }
@@ -193,14 +217,14 @@ nav h6 { color: #015450; }
         padding-left: 80px;
     }
 
-    .section-3 .bottom-text { padding-top: 60px; }
+    .bottom-text { padding-top: 60px; }
 
-    .section-4 .right { padding-top: 0px; }
-    .section-4 h1 { font-size: 3em; }
-    .section-4 h5 { font-size: 1.75em; }
-    .section-4 .input { font-size: 1em; }
-    .section-4 button { width: 100%; }
-    .section-4 .left { text-align: left; }
+    .contact-us .right { padding-top: 0px; }
+    .contact-us h1 { font-size: 3em; }
+    .contact-us h5 { font-size: 1.75em; }
+    .contact-us .input { font-size: 1em; }
+    .contact-us button { width: 100%; }
+    .contact-us .left { text-align: left; }
 
 }
 
@@ -211,8 +235,8 @@ nav h6 { color: #015450; }
     .vp-xs, .vp-sm, .vp-md, .vp-lg { display: none; }
     .vp-xl { display: inherit; }
 
-    .section-1 h1 { font-size: 5em; }
-    .section-1 h3 { font-size: 4.5em; }
+    .overlay h1 { font-size: 5em; }
+    .overlay h3 { font-size: 4.5em; }
 
     .sections h4 { font-size: 3.8em; }
     .sections h6 { font-size: 2.6em; }
@@ -223,11 +247,11 @@ nav h6 { color: #015450; }
         padding-left: 100px;
     }
 
-    .section-3 .bottom-text { padding-top: 80px; }
+    .bottom-text { padding-top: 80px; }
 
-    .section-4 h1 { font-size: 3.5em; }
-    .section-4 h5 { font-size: 2em; }
-    .section-4 .input { font-size: 2em; }
+    .contact-us h1 { font-size: 3.5em; }
+    .contact-us h5 { font-size: 2em; }
+    .contact-us .input { font-size: 2em; }
 
     .footer h5 { font-size: 2.25em; }
     .footer p { font-size: 1.75em; }
